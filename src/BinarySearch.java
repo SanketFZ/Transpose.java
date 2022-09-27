@@ -62,31 +62,32 @@ public class BinarySearch {
         int n = array.length-1;
         Sort(array);
         Scanner sc =new Scanner(System.in);
-        int c= sc.nextInt();
-        int result = binarySearch(array,c,0,n-1);
-        if (result == -1){
-            System.out.println("Element not present");
-        }
-        else
-            System.out.println("Element found at index "
-                    + result);
+            int c= sc.nextInt();
+            int result = binarySearch(array,c,0,n-1);
+            if (result == -1){
+                System.out.println("Element not present");
+            }
+            else
+                System.out.println("Element found at index "
+                        + result);
 
-        System.out.println("Adding an element");
-        array=addX(n+1,array,c);
-        Sort(array);
-        System.out.println("Enter the index to be deleted");
-        int k= sc.nextInt();
-        array=delete(array,k);
-        System.out.println("Element Deleted at index: "
-                + k);
+            System.out.println("Adding an element");
+            array=addX(n+1,array,c);
+            Sort(array);
+            System.out.println("Enter the index to be deleted");
+            int k= sc.nextInt();
+            array=delete(array,k);
+            System.out.println("Element Deleted at index: "
+                    + k);
+    
         System.out.println("deleted Array: "
                 + Arrays.toString(array));
-
+        }
 
 
     }
 
 
-}
+
 
 
