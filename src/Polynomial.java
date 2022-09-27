@@ -1,7 +1,6 @@
-import java.io.*;
-import java.util.Scanner;
+
 class Polynomial {
-    public static Node addPolynomial(Node p1, Node p2)
+    public Node addPolynomial(Node p1, Node p2)
     {
         Node a = p1, b = p2, newHead = new Node(0, 0),
                 c = newHead;
